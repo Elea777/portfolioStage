@@ -1,0 +1,320 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+/*nav*/
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff
+
+
+}
+.logo{
+    font-weight: bold;
+}
+.navbar{
+    display: flex;
+    gap: 2rem;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+/*hero*/
+.section-hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    min-height: 100vh;
+    background: #EEAECA;
+    background: linear-gradient(100deg, rgba(238, 174, 202, 1) 0%, rgba(191, 181, 218, 1) 76%, rgba(148, 187, 233, 1) 100%);
+
+}
+.hero-container-left{
+
+    z-index: 1;
+    width: 50%;
+    height: auto;
+    margin-top: 3rem;
+    min-height: calc(100vh - 200px);
+}
+
+.hero-container-left h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+
+}
+
+.hero-container-left p{
+    font-size: 1.5rem;
+
+
+}
+
+.hero-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12rem;
+
+
+}
+
+.hero-container-right{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.button-view-my-work{
+    font-size: 15px;
+    border: none;
+    background: none;
+
+}
+
+.button-view-my-work a{
+    color: #fff;
+    font-size:2rem;
+}
+
+
+.img-elea{
+    width: 130%;
+    /*De image mag buiten de grote van mijn container komen*/
+    flex-shrink: 0;
+    height: auto;
+
+}
+
+/*Over mij*/
+main{
+
+
+}
+.over-mij{
+    padding:1rem 2rem;
+    margin-top: 2rem;
+    min-height: 25vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.over-mij p{
+    line-height: 2rem;
+ }
+
+/*Projecten*/
+.container-kaart-projecten{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+
+}
+
+.kaart-projecten {
+    display: flex;
+    flex-direction: column;
+}
+
+.projecten{
+    padding:1rem 2rem;
+    margin-top: 2rem;
+    background: #EEAECA;
+    background: linear-gradient(100deg, rgba(238, 174, 202, 1) 0%, rgba(191, 181, 218, 1) 76%, rgba(148, 187, 233, 1) 100%);
+
+}
+.projecten h2{
+    padding: 2rem 0;
+}
+
+.projecten h3{
+    padding: 2rem 0;
+}
+
+.project-video{
+    width: 100%;
+    font-family: "ABeeZee", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin-top: auto;
+    padding-top: 1rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+}
+
+.project-video:hover {
+    text-decoration: underline;
+}
+/*Projecten-Venster*/
+.venster {
+    width: 90vw;
+    max-width: 900px;
+    margin: auto;      /* nodig door jouw * { margin: 0 } reset */
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+}
+
+/* enkel flex als de modal open is, anders blijft hij altijd zichtbaar */
+.venster[open] {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.venster::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.venster-sluiten {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.video-venster-spelen {
+    width: 100%;
+}
+
+.button-demo {
+    border: none;
+    background: none;
+    color: pink;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.mijn-skills {
+    padding: 4rem 2rem;
+}
+
+.skills-uitleg {
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skill {
+    width: 160px;
+    height: 160px;
+
+    border: 7px solid #bf7ed8;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.percentage {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #EEAECA;
+    background: linear-gradient(100deg, rgba(238, 174, 202, 1) 0%, rgba(191, 181, 218, 1) 76%, rgba(148, 187, 233, 1) 100%);
+
+}
+
+.icoon-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icoon-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50px;
+    height: 50px;
+
+    border: 2px solid black;
+    border-radius: 50%;
+
+    transition: 0.2s;
+}
+
+.icoon {
+    width: 25px;
+    height: 25px;
+}
+
+.icoon-container a:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+
+.img-contact-me{
+    width:10rem;
+}
+/*Op een telefoon 1 kolom per project*/
+@media (max-width: 768px) {
+
+    .container-kaart-projecten {
+        grid-template-columns: 1fr;
+    }
+
+}
+/*responsive image*/
+
+
+/*
+!*css voor js *!
+.hero-titel {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.hero-titel.zichtbaar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hero-tekst {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.hero-tekst.zichtbaar {
+    opacity: 1;
+    transform: translateY(0);
+}*/

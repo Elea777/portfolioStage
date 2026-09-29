@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio ELea Yildiz</title>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+ <div class="header-container">
+
+     <div class="container-logo">
+         <a href="#hero" class="logo">Elea Yildiz</a>
+     </div>
+
+         <nav class="navbar">
+             <a href="#over-mij">About me</a>
+             <a href="#projecten">Projects</a>
+             <a href="#mijn-skills">Skills</a>
+             <a href="#contact">Contact</a>
+         </nav>
+
+ </div>
+
+</header>
+
+  <section class="section-hero" id="hero">
+
+     <div class="hero-container-left">
+         <h1 class="hero-titel"> Hey, I'm Elea</h1>
+         <br>
+         <p class="hero-tekst">Future web developer.</p>
+
+         <p class="hero-tekst">Current work in progress_</p>
+
+         <div class="hero-buttons">
+             <button class="button-view-my-work"> <a href="#projecten">[ View my work ]</a></button>
+         </div>
+     </div>
+
+      <div class="hero-container-right">
+          <img class="img-elea" src="src/assets/eleaImg.svg" alt="foto-Elea">
+      </div>
+  </section>
+
+
+<main>
+  <section class="over-mij" id="over-mij">
+
+      <h2>About me</h2>
+      <br>
+      <p>
+          I’m a Digital Design student who gets genuinely excited about turning ideas into real, interactive experiences.
+          Give me a design, a challenge and some code, and I’ll probably lose track of time figuring out how to make it work.
+          I love learning, experimenting and watching my skills grow with every project I build.
+          I’m working towards becoming a front-end developer who doesn’t just make things work but makes them worth looking at too.
+      </p>
+
+  </section>
+
+  <section class="projecten" id="projecten">
+      <h2>My projects</h2>
+
+    <div class="container-kaart-projecten">
+        <article class="kaart-projecten">
+            <h3>ImmoHabits</h3>
+            <p>Team project · Web Development · Scrum</p>
+            <p>
+                A team project where 6 students worked together to build a real-world case using the Scrum methodology.
+                <br>
+                I worked as a Web Developer and took on the role of Scrum Master during Sprint 2.
+            </p>
+
+            <button class="project-video" data-video="src/demo/immohabits.mov">[ View demo ]</button>
+        </article>
+
+        <article  class="kaart-projecten">
+            <h3>Pokedex</h3>
+            <p>Individual Project · Vue.js</p>
+            <p>
+                An individual project where I learned to build an interactive web application with Vue.js, using components, routing, state management and API data.
+            </p>
+
+            <button class="project-video" data-video="src/demo/pokedex.mov">[ View demo ] </button>
+        </article>
+
+        <article  class="kaart-projecten">
+            <h3>Takeaway</h3>
+            <p>Individual Project · Vanilla JavaScript</p>
+            <p>
+                One of my first JavaScript projects, where I learned to build an interactive take-away website using Vanilla JavaScript.
+                <br>
+                I worked with DOM manipulation, events, localStorage and dynamic data.
+            </p>
+
+            <button class="project-video" data-video="src/demo/takeaway.mov">[ View demo ]</button>
+        </article>
+    </div>
+
+      <dialog class="venster">
+          <button class="venster-sluiten" aria-label="Close">x</button>
+          <video class="video-venster-spelen" controls></video>
+      </dialog>
+  </section>
+
+    <section class="mijn-skills" id="mijn-skills">
+
+        <h2>My skills</h2>
+
+        <p class="skills-uitleg">
+            How I divide my development time during my Digital Design studies.
+        </p>
+
+        <div class="skills-container">
+
+            <article class="skill">
+                <h3>HTML</h3>
+                <p class="percentage">15%</p>
+            </article>
+
+            <article class="skill">
+                <h3>CSS</h3>
+                <p class="percentage">15%</p>
+            </article>
+
+            <article class="skill">
+                <h3>JavaScript</h3>
+                <p class="percentage">25%</p>
+            </article>
+
+            <article class="skill">
+                <h3>Vue.js</h3>
+                <p class="percentage">20%</p>
+            </article>
+
+            <article class="skill">
+                <h3>PHP</h3>
+                <p class="percentage">15%</p>
+            </article>
+
+            <article class="skill">
+                <h3>Node.js</h3>
+                <p class="percentage">10%</p>
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer  class="contact" id="contact">
+    <div class="tekst-container">
+        <h4>Elea Yildiz</h4>
+        <p>Meet your future developer</p>
+    </div>
+
+    <div>
+        <img class="img-contact-me" src="src/assets/contactMe.png" alt="foto-contact">
+    </div>
+
+    <div class="icoon-container">
+        <a href="mailto:elea.ny@protonmail.com"><img class="icoon" src="src/assets/mail.png" alt="mail"></a>
+        <a href="mailto:0486794999"><img class="icoon" src="src/assets/call.png" alt="phone"></a>
+        <a href="https://www.linkedin.com/in/elea-y-1637b2404/" target="_blank"><img class="icoon" src="src/assets/linkedin.png" alt="linkedin"></a>
+    </div>
+</footer>
+
+</body>
+</html>
